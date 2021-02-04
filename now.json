@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "api-admin",
+  "builds": [
+    {
+      "src": "./server.admin.ts",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/admin/graphql",
+      "dest": "server.admin.ts"
+    }
+  ]
+}
